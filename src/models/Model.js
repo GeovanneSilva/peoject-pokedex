@@ -5,7 +5,7 @@ export default class Model extends BaseModel {
 
   // eslint-disable-next-line class-methods-use-this
   baseURL() {
-    return 'http://localhost:3000';
+    return 'https://api.sheety.co/540781f1679157fddd1c9f7061c73ca3/list/pokemons';
   }
 
   request(config) {

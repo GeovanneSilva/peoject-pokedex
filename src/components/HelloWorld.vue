@@ -1,18 +1,20 @@
 <template>
   <div>
-    <div
+    <!-- <div
     v-for="(pokemon, key) in pokemons"
     :key="key"
     class="container"
     >
       <span > {{ pokemon.name }} </span>
       <img :src="require(`@/assets/img/${pokemon.img}.png`)" :alt="pokemon.name">
-    </div>
+    </div> -->
+    <span> {{ pokemons.name }}</span>
   </div>
 </template>
 
 <script>
-import PokemonModels from '../models/PokemonModels';
+// import PokemonModels from '../models/PokemonModels';
+import axios from 'axios';
 
 export default {
   name: 'HelloWorld',
@@ -22,7 +24,8 @@ export default {
     };
   },
   async created() {
-    this.pokemons = await PokemonModels.get();
+    this.pokemons = axios.get('https://api.sheety.co/540781f1679157fddd1c9f7061c73ca3/list/pokemons')
+      .then((res) => { this.pokemons = JSON.parse(res.data); });
   },
 };
 </script>
