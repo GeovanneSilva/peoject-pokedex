@@ -1,0 +1,516 @@
+{
+    "pokemons": [
+        {
+            "id": "#001",
+            "name": "Bulbasaur",
+            "tipo": {
+                "1": "Grama",
+                "2": "Veneno"
+            },
+            "descricao": "Bulbasaur é um Pokémon do tipo Grama/Veneno introduzido na Geração 1. É conhecido como Pokémon Semente.",
+            "peso": "6,9",
+            "altura": "0,7",
+            "movimentos": {
+                "1": "Overgrow",
+                "2": "Chlorophyll"
+            },
+            "stats": {
+                "hp": 45,
+                "ataque": 49,
+                "defesa": 49,
+                "sp-ataque": 65,
+                "sp-defesa": 65,
+                "velocidade": 45
+            },
+            "img": "001",
+            "cor": "#90E2D2"
+        },
+        {
+            "id": "#002",
+            "name": "Ivysaur",
+            "tipo": {
+                "1": "Grama",
+                "2": "Veneno"
+            },
+            "descricao": "Ivysaur é um Pokémon do tipo Grama/Veneno introduzido na Geração 1. É conhecido como o Pokémon Semente.",
+            "peso": "13,0",
+            "altura": "1,0",
+            "movimentos": {
+                "1": "Overgrow",
+                "2": "Chlorophyll"
+            },
+            "stats": {
+                "hp": 60,
+                "ataque": 62,
+                "defesa": 63,
+                "sp-ataque": 80,
+                "sp-defesa": 80,
+                "velocidade": 60
+            },
+            "img": "002",
+            "cor": "#90E2D2"
+        },
+        {
+            "id": "#003",
+            "name": "Venusaur",
+            "tipo": {
+                "1": "Grama",
+                "2": "Veneno"
+            },
+            "descricao": "Venusaur é um Pokémon do tipo Grama/Veneno introduzido na Geração 1. É conhecido como o Pokémon Semente. Venusaur tem uma Mega Evolução, disponível a partir de X e Y.",
+            "peso": "100,0",
+            "altura": "2,0",
+            "movimentos": {
+                "1": "Overgrow",
+                "2": "Chlorophyll"
+            },
+            "stats": {
+                "hp": 80,
+                "ataque": 82,
+                "defesa": 83,
+                "sp-ataque": 100,
+                "sp-defesa": 100,
+                "velocidade": 80
+            },
+            "img": "003",
+            "cor": "#00C0D7"
+        },
+        {
+            "id": "#003M",
+            "name": "Mega Vanusaur",
+            "tipo": {
+                "1": "Grama",
+                "2": "Veneno"
+            },
+            "descricao": "Venusaur é um Pokémon do tipo Grama/Veneno introduzido na Geração 1. É conhecido como o Pokémon Semente. Venusaur tem uma Mega Evolução, disponível a partir de X e Y.",
+            "peso": "100,0",
+            "altura": "2,0",
+            "movimentos": {
+                "1": "Overgrow",
+                "2": "Chlorophyll"
+            },
+            "stats": {
+                "hp": 80,
+                "ataque": 82,
+                "defesa": 83,
+                "sp-ataque": 100,
+                "sp-defesa": 100,
+                "velocidade": 80
+            },
+            "img": "003M",
+            "cor": "#6DB0CB"
+        },
+        {
+            "id": "#004",
+            "name": "Charmander",
+            "tipo": {
+                "1": "Fogo"
+            },
+            "descricao": "Charmander é um Pokémon do tipo Fogo introduzido na Geração 1. É conhecido como o Pokémon Lizard.",
+            "peso": "8,5",
+            "altura": "0,6",
+            "movimentos": {
+                "1": "Blaze",
+                "2": "Solar Power"
+            },
+            "stats": {
+                "hp": 39,
+                "ataque": 52,
+                "defesa": 43,
+                "sp-ataque": 60,
+                "sp-defesa": 50,
+                "velocidade": 65
+            },
+            "img": "004",
+            "cor": "#F28300"
+        },
+        {
+            "id": "#005",
+            "name": "Charmeleon",
+            "tipo": {
+                "1": "Grama",
+                "2": "Veneno"
+            },
+            "descricao": "Charmeleon é um Pokémon do tipo Fogo introduzido na Geração 1. É conhecido como o Pokémon Flame.",
+            "peso": "19,0",
+            "altura": "1,1",
+            "movimentos": {
+                "1": "Blaze",
+                "2": "Solar Power"
+            },
+            "stats": {
+                "hp": 58,
+                "ataque": 64,
+                "defesa": 58,
+                "sp-ataque": 80,
+                "sp-defesa": 65,
+                "velocidade": 80
+            },
+            "img": "005",
+            "cor": "#F40404"
+        },
+        {
+            "id": "#006",
+            "name": "Charizard",
+            "tipo": {
+                "1": "Blaze",
+                "2": "Solar Power"
+            },
+            "descricao": "Charizard é um Pokémon do tipo Fogo/Voador introduzido na Geração 1. É conhecido como o Pokémon Chama. Charizard tem duas Mega Evoluções, disponíveis a partir de X e Y.",
+            "peso": "90,5",
+            "altura": "1,7",
+            "movimentos": {
+                "1": "Blaze",
+                "2": "Solar Power"
+            },
+            "stats": {
+                "hp": 78,
+                "ataque": 84,
+                "defesa": 78,
+                "sp-ataque": 109,
+                "sp-defesa": 85,
+                "velocidade": 100
+            },
+            "img": "006",
+            "cor": "#FBB500"
+        },
+        {
+            "id": "#006MX",
+            "name": "Mega Charizard X",
+            "tipo": {
+                "1": "Fogo",
+                "2": "Dragão"
+            },
+            "descricao": "Charizard é um Pokémon do tipo Fogo/Voador introduzido na Geração 1. É conhecido como o Pokémon Chama. Charizard tem duas Mega Evoluções, disponíveis a partir de X e Y.",
+            "peso": "110,5",
+            "altura": "1,7",
+            "movimentos": {
+                "1": "Tough Claws"
+            },
+            "stats": {
+                "hp": 78,
+                "ataque": 130,
+                "defesa": 111,
+                "sp-ataque": 130,
+                "sp-defesa": 85,
+                "velocidade": 100
+            },
+            "img": "006MX",
+            "cor": "#0075BE"
+        },
+        {
+            "id": "#006MY",
+            "name": "Mega Charizard Y",
+            "tipo": {
+                "1": "Fogo",
+                "2": "Dragão"
+            },
+            "descricao": "Charizard é um Pokémon do tipo Fogo/Voador introduzido na Geração 1. É conhecido como o Pokémon Chama. Charizard tem duas Mega Evoluções, disponíveis a partir de X e Y.",
+            "peso": "110,5",
+            "altura": "1,7",
+            "movimentos": {
+                "1": "Tough Claws"
+            },
+            "stats": {
+                "hp": 78,
+                "ataque": 130,
+                "defesa": 111,
+                "sp-ataque": 130,
+                "sp-defesa": 85,
+                "velocidade": 100
+            },
+            "img": "006MY",
+            "cor": "#FFC300"
+        },
+        {
+            "id": "#007",
+            "name": "Squirtle",
+            "tipo": {
+                "1": "Água"
+            },
+            "descricao": "Squirtle é um Pokémon do tipo Água introduzido na Geração 1. É conhecido como o Pokémon Tartaruga Minúscula.",
+            "peso": "9,0",
+            "altura": "0,5",
+            "movimentos": {
+                "1": "Torrent",
+                "2": "Rain Dish"
+            },
+            "stats": {
+                "hp": 44,
+                "ataque": 48,
+                "defesa": 65,
+                "sp-ataque": 50,
+                "sp-defesa": 64,
+                "velocidade": 43
+            },
+            "img": "007",
+            "cor": "#66BEE5"
+        },
+        {
+            "id": "#008",
+            "name": "Wartortle",
+            "tipo": {
+                "1": "Água"
+            },
+            "descricao": "Wartortle é um Pokémon do tipo Água introduzido na Geração 1 . É conhecido como o Pokémon Tartaruga .",
+            "peso": "22,5",
+            "altura": "1,0",
+            "movimentos": {
+                "1": "Torrent",
+                "2": "Rain Dish"
+            },
+            "stats": {
+                "hp": 59,
+                "ataque": 63,
+                "defesa": 80,
+                "sp-ataque": 65,
+                "sp-defesa": 80,
+                "velocidade": 58
+            },
+            "img": "008",
+            "cor": "#B9CDFF"
+        },
+        {
+            "id": "#009",
+            "name": "Blastoise",
+            "tipo": {
+                "1": "Água"
+            },
+            "descricao": "Blastoise é um Pokémon do tipo Água introduzido na Geração 1. É conhecido como o Pokémon Marisco. Blastoise tem uma Mega Evolução, disponível a partir de X e Y.",
+            "peso": "85,5",
+            "altura": "1,6",
+            "movimentos": {
+                "1": "Torrent",
+                "2": "Rain Dish"
+            },
+            "stats": {
+                "hp": 79,
+                "ataque": 83,
+                "defesa": 100,
+                "sp-ataque": 85,
+                "sp-defesa": 105,
+                "velocidade": 78
+            },
+            "img": "009",
+            "cor": "#74AFD8"
+        },
+        {
+            "id": "#009M",
+            "name": "Mega Blastoise",
+            "tipo": {
+                "1": "Água"
+            },
+            "descricao": "Blastoise é um Pokémon do tipo Água introduzido na Geração 1. É conhecido como o Pokémon Marisco. Blastoise tem uma Mega Evolução, disponível a partir de X e Y.",
+            "peso": "101,1",
+            "altura": "1,6",
+            "movimentos": {
+                "1": "Mega lançador"
+            },
+            "stats": {
+                "hp": 79,
+                "ataque": 103,
+                "defesa": 120,
+                "sp-ataque": 135,
+                "sp-defesa": 115,
+                "velocidade": 78
+            },
+            "img": "009M",
+            "cor": "#8CCEFD"
+        },
+        {
+            "id": "#010",
+            "name": "Caterpie",
+            "tipo": {
+                "1": "Inseto"
+            },
+            "descricao": "Caterpie é um Pokémon do tipo Inseto introduzido na Geração 1. É conhecido como o Pokémon Verme.",
+            "peso": "2,9",
+            "altura": "0,3",
+            "movimentos": {
+                "1": "Shield Dust",
+                "2": "Run Away"
+            },
+            "stats": {
+                "hp": 45,
+                "ataque": 30,
+                "defesa": 35,
+                "sp-ataque": 20,
+                "sp-defesa": 20,
+                "velocidade": 45
+            },
+            "img": "010",
+            "cor": "#78DE5A"
+        },
+        {
+            "id": "#011",
+            "name": "Metapod",
+            "tipo": {
+                "1": "Inseto"
+            },
+            "descricao": "Metapod é um Pokémon do tipo Inseto introduzido na Geração 1. É conhecido como o Pokémon Cocoon.",
+            "peso": "9,9",
+            "altura": "0,7",
+            "movimentos": {
+                "1": "Shed Skin"
+            },
+            "stats": {
+                "hp": 50,
+                "ataque": 20,
+                "defesa": 55,
+                "sp-ataque": 25,
+                "sp-defesa": 25,
+                "velocidade": 30
+            },
+            "img": "011",
+            "cor": "#559F16"
+        },
+        {
+            "id": "#012",
+            "name": "Butterfree",
+            "tipo": {
+                "1": "Inseto",
+                "2": "Vôo"
+            },
+            "descricao": "Butterfree é um Pokémon do tipo Inseto / Voador introduzido na Geração 1. É conhecido como o Pokémon Borboleta.",
+            "peso": "32.0",
+            "altura": "1.1",
+            "movimentos": {
+                "1": "Compound Eyes",
+                "2": "Tinted Lens"
+            },
+            "stats": {
+                "hp": 60,
+                "ataque": 45,
+                "defesa": 50,
+                "sp-ataque": 90,
+                "sp-defesa": 80,
+                "velocidade": 70
+            },
+            "img": "012",
+            "cor": "#947EB0"
+        },
+        {
+            "id": "#013",
+            "name": "Weedle",
+            "tipo": {
+                "1": "Inseto",
+                "2": "Veneno"
+            },
+            "descricao": "Weedle é um Pokémon do tipo Inseto / Veneno introduzido na Geração 1. É conhecido como o Pokémon Inseto Peludo.",
+            "peso": "3,2",
+            "altura": "0,3",
+            "movimentos": {
+                "1": "Shield Dust",
+                "2": "Run Away"
+            },
+            "stats": {
+                "hp": 40,
+                "ataque": 35,
+                "defesa": 30,
+                "sp-ataque": 20,
+                "sp-defesa": 20,
+                "velocidade": 50
+            },
+            "img": "013",
+            "cor": "#B28E5D"
+        },
+        {
+            "id": "#014",
+            "name": "Kakuna",
+            "tipo": {
+                "1": "Inseto",
+                "2": "Veneno"
+            },
+            "descricao": "Kakuna é um Pokémon do tipo Inseto/Veneno introduzido na Geração 1. É conhecido como o Pokémon Cocoon.",
+            "peso": "10.0",
+            "altura": "0.6",
+            "movimentos": {
+                "1": "Shed Skin"
+            },
+            "stats": {
+                "hp": 45,
+                "ataque": 25,
+                "defesa": 50,
+                "sp-ataque": 25,
+                "sp-defesa": 25,
+                "velocidade": 35
+            },
+            "img": "014",
+            "cor": "#E6CF00"
+        },
+        {
+            "id": "#015",
+            "name": "Beedrill",
+            "tipo": {
+                "1": "Inseto",
+                "2": "Veneno"
+            },
+            "descricao": "Beedrill é um Pokémon do tipo Inseto/Veneno introduzido na Geração 1. É conhecido como o Pokémon Abelha Venenosa. Beedrill tem uma Mega Evolução, disponível a partir de Omega Ruby & Alpha Sapphire.",
+            "peso": "29,5",
+            "altura": "1,0",
+            "movimentos": {
+                "1": "Swarm",
+                "2": "Sniper"
+            },
+            "stats": {
+                "hp": 65,
+                "ataque": 90,
+                "defesa": 40,
+                "sp-ataque": 45,
+                "sp-defesa": 80,
+                "velocidade": 75
+            },
+            "img": "015",
+            "cor": "#C7921B"
+        },
+        {
+            "id": "#015M",
+            "name": "Mega Beedrill",
+            "tipo": {
+                "1": "Inseto",
+                "2": "Veneno"
+            },
+            "descricao": "Beedrill é um Pokémon do tipo Inseto/Veneno introduzido na Geração 1. É conhecido como o Pokémon Abelha Venenosa. Beedrill tem uma Mega Evolução, disponível a partir de Omega Ruby & Alpha Sapphire.",
+            "peso": "40.5",
+            "altura": "1.4",
+            "movimentos": {
+                "1": "Adaptability"
+            },
+            "stats": {
+                "hp": 65,
+                "ataque": 150,
+                "defesa": 40,
+                "sp-ataque": 15,
+                "sp-defesa": 80,
+                "velocidade": 145
+            },
+            "img": "015M",
+            "cor": "#EAB222"
+        },
+        {
+            "id": "#016",
+            "name": "Pidgey",
+            "tipo": {
+                "1": "Normal",
+                "2": "Vôo"
+            },
+            "descricao": "Pidgey é um Pokémon do tipo Normal/Voador introduzido na Geração 1. É conhecido como o Pokémon Tiny Bird.",
+            "peso": "1.8",
+            "altura": "0.3",
+            "movimentos": {
+                "1": "Keen Eye",
+                "2": "Tangled Feet"
+            },
+            "stats": {
+                "hp": 40,
+                "ataque": 45,
+                "defesa": 40,
+                "sp-ataque": 35,
+                "sp-defesa": 35,
+                "velocidade": 35
+            },
+            "img": "016",
+            "cor": "#FFFEC5"
+        }
+    ]
+}
