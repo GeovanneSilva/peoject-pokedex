@@ -1,59 +1,47 @@
 <template>
-  <div>
-    <!-- <div
-    v-for="(pokemon, key) in pokemons"
-    :key="key"
-    class="container"
-    >
-      <span > {{ pokemon.name }} </span>
-      <img :src="require(`@/assets/img/${pokemon.img}.png`)" :alt="pokemon.name">
-    </div> -->
-    <span> {{ pokemons.name }}</span>
-  </div>
+  <v-container>
+    <v-row class="text-center">
+      <v-col
+        v-for="(pokemon, key) in pokemons"
+        :key="key"
+        cols="3"
+        class="d-flex justify-center"
+      >
+        <v-card
+          class="mx-auto my-12 flex-column align-center d-flex justify-center"
+          width="214"
+          heigth="214"
+          :style="`border: ${pokemon.cor} solid 2px`"
+          >
+            <v-img
+            :src="require(`@/assets/img/${pokemon.img}.png`)"
+            width="142"
+            heigth="142"
+            ></v-img>
+            <v-card-title
+            :style="`background-color: ${pokemon.cor}; width: 214px; color: white`"
+            >{{ pokemon.name }}</v-card-title>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-// import PokemonModels from '../models/PokemonModels';
 import axios from 'axios';
 
 export default {
   name: 'HelloWorld',
-  data() {
-    return {
-      pokemons: [],
-    };
-  },
-  async created() {
-    this.pokemons = axios.get('https://api.sheety.co/540781f1679157fddd1c9f7061c73ca3/list/pokemons')
-      .then((res) => { this.pokemons = JSON.parse(res.data); });
+
+  data: () => ({
+    pokemons: [],
+  }),
+  created() {
+    this.pokemons = axios.get('https://apipokemons1.herokuapp.com/pokemons')
+      .then((res) => {
+        this.pokemons = res.data;
+        console.log(this.pokemons);
+      });
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-img{
-  width: 50px;
-}
-
-</style>
