@@ -1,4 +1,3 @@
-/* eslint-disable max-len */
 <template>
   <v-container>
     <v-row class="text-center">
@@ -69,7 +68,6 @@ export default {
     this.pokemons = axios.get('https://apipokemons1.herokuapp.com/pokemons')
       .then((res) => {
         this.pokemons = res.data;
-        console.log(this.pokemons);
       });
   },
 };
