@@ -2,8 +2,9 @@
   <v-app>
     <v-app-bar
       app
-      color="primary"
+      :color="getPage()"
       dark
+      elevation="0"
     >
       <div class="d-flex align-center">
         <v-img
@@ -26,35 +27,38 @@
       </div>
 
       <v-spacer></v-spacer>
-
-      <v-btn
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-        text
-      >
-        <span class="mr-2">Latest Release</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
     </v-app-bar>
 
     <v-main>
-      <HelloWorld/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+/* import home from './views/home.vue'; */
+import route from './router';
 
 export default {
   name: 'App',
 
-  components: {
-    HelloWorld,
-  },
+  /*   components: {
+    home,
+  }, */
 
   data: () => ({
-    //
+    color: '',
   }),
+  methods: {
+    getPage() {
+      const cor = route.history.current.name;
+      if (cor === 'home') {
+        this.color = 'yellow';
+      } else {
+        this.color = 'white';
+      }
+      return this.color;
+    },
+  },
 };
 </script>
