@@ -6,27 +6,19 @@
       dark
       elevation="0"
     >
-      <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
-
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>
-
       <v-spacer></v-spacer>
+        <v-tabs
+            right
+            :color="getCor()"
+            class="mr-2"
+            >
+           <v-tab
+           :class="`${colortabs}--text`"
+           >Inicio</v-tab>
+           <v-tab
+           :class="`${colortabs}--text`"
+           >Pokedex</v-tab>
+        </v-tabs>
     </v-app-bar>
 
     <v-main>
@@ -48,6 +40,7 @@ export default {
 
   data: () => ({
     color: '',
+    colortabs: '',
   }),
   methods: {
     getPage() {
@@ -55,10 +48,25 @@ export default {
       if (cor === 'home') {
         this.color = 'yellow';
       } else {
-        this.color = 'white';
+        this.color = 'transparent';
       }
       return this.color;
+    },
+    getCor() {
+      const nome = route.history.current.name;
+      if (nome === 'home') {
+        this.colortabs = 'white';
+      } else if (nome === 'pokedex') {
+        this.colortabs = 'yellow';
+      }
+      return this.colortabs;
     },
   },
 };
 </script>
+
+<style>
+  *{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+</style>
