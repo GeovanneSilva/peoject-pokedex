@@ -64,9 +64,10 @@ export default {
     pokemons: [],
   }),
   created() {
-    this.pokemons = axios.get('https://apipokemons1.herokuapp.com/pokemons')
+    this.pokemons = axios.get('http://192.168.6.8:8080/pokemons')
       .then((res) => {
         this.pokemons = res.data;
+        console.log(this.pokemons);
       });
   },
 };
